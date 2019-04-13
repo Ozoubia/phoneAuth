@@ -54,5 +54,14 @@
     "tslint": "~5.12.0",
     "typescript": "~3.1.6"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-facebook-account-kit": {
+        "APP_ID": "643962209397151",
+        "APP_NAME": "Icar",
+        "AK_TOKEN": "e66a0b77ffe468457d61ba316eba4d03"
+      }
+    }
+  }
 }
