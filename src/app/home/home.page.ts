@@ -11,20 +11,18 @@ export class HomePage {
   constructor(private router: Router){
 
   }
-//{ alert(JSON.stringify(response)); }, function (error) { console.log(error) });
+
   login(){
-    /*
-    (<any>window).FacebookAccountKit.mobileLogin({
-        useAccessToken: true,
-        facebookNotificationEnabled: true 
-    }, (data)=> {
-      (<any>window).FacebookAccountKit.GetAccount((info)=>{
-          this.router.navigate(['dashboard']);
-      })
-    }, (err)=> {
-      alert(err)
-    })
-    */
-   (<any>window).FacebookAccountKit.mobileLogin(function (response) { alert(JSON.stringify(response)); }, function (error) { console.log(error) });
+    
+   
+    (<any>window).FacebookAccountKit.mobileLogin(function (response) {
+     //alert(JSON.stringify(response)); 
+    }, function (error) { 
+      console.log(error) 
+    }) 
+    ;
+    
+    this.router.navigate(['dashboard'])
+    
   }
 }
